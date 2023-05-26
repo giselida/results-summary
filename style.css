@@ -16,7 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Hanken Grotesk", sans-serif;
-  background-color: var(--black);
+  background-color: var(--white);
 }
 main {
   width: 100%;
@@ -29,7 +29,7 @@ main {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(0deg, rgba(46, 43, 233, 1) 49%, rgba(120, 87, 255, 1) 100%);
-  padding: 20px;
+  padding: 30px;
   border-radius: 0 0 20px 20px;
 }
 .first-card > h1 {
@@ -161,10 +161,41 @@ button {
 button > span {
   color: rgba(255, 255, 255, 0.914);
 }
+
+@media screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    max-width: 580px;
+  }
+  body {
+    height: 90vh;
+  }
+  .first-card {
+    border-radius: 20px;
+    width: 100%;
+  }
+  .first-card > p {
+    max-width: 192px;
+  }
+  .first-card > h2 {
+    font-size: 25px;
+  }
+  .second-card {
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.056);
+    border-radius: 0 20px 20px 0;
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .ball-card {
+    padding: 30px;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
