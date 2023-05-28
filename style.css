@@ -162,7 +162,7 @@ button > span {
   color: rgba(255, 255, 255, 0.914);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 900px) {
   main {
     display: flex;
     max-width: 580px;
